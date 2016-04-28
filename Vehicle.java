@@ -3,11 +3,14 @@ package vehicle;
 public class Vehicle {
 
     public static void main(String[] args) {
-        Automobile Cabbie = new Automobile("yellow",4,4,5);
+        Automobile Cabbie = new Automobile(4,4);
+        Cabbie.SetTransmission(5);
+        Cabbie.SetColor("Yellow");
         Cabbie.SetName("Cabbie");
         System.out.println(Cabbie.About());
         
-        Automobile Sporty = new Automobile("red",2,8,7);
+        Automobile Sporty = new Automobile(2,8,7);
+        Sporty.SetColor("Red");
         Sporty.SetName("Sporty");
         System.out.println(Sporty.About());
         
